@@ -1,0 +1,361 @@
+@import "font.css";
+
+*{
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+    list-style: none;
+    box-sizing: border-box;
+}
+
+html,body{
+    scroll-behavior: smooth;
+}
+
+body.active{
+    overflow: hidden;
+}
+
+
+img{
+    vertical-align: middle;
+}
+
+a,
+span{
+    display: inline-block;
+}
+
+button{
+    border: none;
+    outline: none;
+    cursor: pointer;
+}
+
+input{
+    border: none;
+    outline: none;
+}
+
+.container{
+    width: 1100px;
+    margin: 0 auto;
+    padding: 0 10px;
+}
+
+.header{
+    position: relative;
+    
+}
+
+.header_content{
+    z-index: 2;
+}
+
+.header_bg{
+    position: relative;
+    object-fit: cover;
+    width: 100%;
+    z-index: 1;
+}
+
+.nav{
+    height: 130px;
+    inset: 0;
+    width: 100%;
+    position: absolute;
+    padding: 24px 0;
+    z-index: 2;
+}
+
+
+.bars::before{
+    content: '\f0c9';
+    font-style: normal;
+    font-size: 24px;
+    color: white;
+}
+
+.phone::before{
+    content: '\f879';
+    font-style: normal;
+    font-size: 24px;
+    color: white;
+}
+
+.nav_content{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.header_title{
+color: white;
+font: 700 clamp(40px, 5vw, 80px) / 80px Roboto;
+margin-bottom: 80px;
+width: 450px;
+letter-spacing: -1.5px;
+}
+
+.bg{
+    inset: 0;
+    position: absolute;
+    display: flex;
+    align-items: flex-end;
+}
+
+.main_first{
+    margin: 105px 0 ;
+}
+
+.main_content{
+    display: flex;
+    justify-content: space-between;
+}
+
+.first_main-title{
+    color: black;
+    font: 700 clamp(30px, 4vw, 48px) / 48px Roboto;
+    width: 250px;
+}
+
+.first_main-title span{
+color: rgb(0, 117, 255);
+}
+
+.right{
+    width: 50%;
+}
+
+.right_title{
+    color: rgb(0, 117, 255);
+    font: 700 clamp(22px, 4vw, 24px) Roboto;
+    margin-bottom: 16px;
+}
+
+.right_text{
+    color: black;
+    font: 400 clamp(14px, 3vw, 16px) / 27px Roboto;
+    margin: 40px 0;
+}
+
+.last_text{
+    color: black;
+    font: 700 16px / 27px Roboto;
+}
+
+.main_title{
+    margin-bottom: 56px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.section_title{
+    color: black;
+    font: 700 clamp(30px, 4vw, 48px) Roboto;
+    text-align: center;
+}
+
+.title_icon{
+    width: 23px;
+    height: 16px;
+    display: flex;
+    margin: 0 auto;
+}
+
+
+.two_img{
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 2%;
+}
+
+.main_big-img{
+    width: 65%;
+    height: 50%;
+}
+
+.main_little-img{
+    width: 33%;
+    height: 50%;
+}
+
+.main_img{
+    width: 49%;
+    height: 50%;
+}
+
+.main_inf{
+    margin: 24px 0 40px;
+    font: 400 16px Roboto;
+}
+
+.main_inf span{
+    font-weight: 600;
+    color: rgb(0, 117, 255);
+}
+
+
+.gallery_link{
+    width: 160px;
+    height: 60px;
+    color: rgb(0, 117, 255);
+    font: 700 16px Roboto;
+    border: 3px solid rgb(0, 117, 255);
+    border-radius: 10px;
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   margin: 0 auto;
+   margin-bottom: 104px;
+}
+
+
+.people_cards{
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 104px;
+}
+
+.people_card{
+    width: 30%;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+}
+
+.people_img{
+    margin: 0 auto;
+    margin-bottom: 32px;
+    width: 150px;
+    height: 150px;
+}
+
+.people_title{
+    color: rgb(0, 117, 255);
+    font: 700 clamp(21px, 4vw, 24px) Roboto;
+}
+
+.people_inf{
+    color: rgb(159, 173, 194);
+font: 400 14px Roboto;
+margin: 4px 0;
+}
+
+.people_text{
+    font: 400 clamp(11px, 3vw, 16px) Roboto;
+}
+
+
+
+
+
+.contact_content{
+display: flex;
+flex-direction: column;
+justify-content: space-between;
+}
+
+.contact{
+    display: flex;
+    justify-content: space-between;
+}
+
+.contact_left{
+    display: flex;
+    
+    width: 50%;
+    gap: 110px;
+}
+
+.phones{
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+}
+
+.phone_div{
+display: flex;
+flex-direction: column;
+gap: 8px;
+}
+
+.phone_title{
+    font: 400 clamp(11px, 2vw, 14px) Roboto;
+    color: rgb(159, 173, 194);
+}
+
+.phone_number{
+    font: 400 clamp(12px, 3vw, 16px) Roboto;
+}
+
+.addres{
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+    width: 140px;
+}
+
+
+.contact_right{
+    display: flex;
+    flex-direction: column;
+    width: 50%;
+    gap: 16px;
+}
+
+input{
+    padding: 14px 17px;
+    width: 100%;
+    border-radius: 8px;
+background: rgb(247, 248, 255);
+color: rgb(143, 153, 168);
+font: 400 clamp(11px, 2vw, 14px) Roboto;
+}
+
+textarea{
+    border: none;
+    resize: none;
+    outline: none;
+    padding: 14px 0 110px 17px;
+    width: 100%;
+    border-radius: 8px;
+background: rgb(247, 248, 255);
+color: rgb(143, 153, 168);
+font: 400 clamp(11px, 2vw, 14px) Roboto;
+}
+
+.input_button{
+   width: 100%;
+    color: white;
+    font: 400 clamp(12px, 3vw, 17px) Roboto;
+    padding: 21px 0;
+    border-radius: 8px;
+box-shadow: 0px 13px 27px 0px rgba(0, 83, 181, 0.46);
+background: rgb(0, 94, 204);
+margin-top: 16px;
+text-align: center;
+}
+
+
+
+
+
+.footer{
+    margin-top: 60px;
+    position: relative;
+}
+
+.footer_bg{
+    inset: 0;
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+    z-index: 2;
+}
+
+.footer_img{
+    margin-bottom: 40px;
+}
